@@ -1,0 +1,349 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'open sans';
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+header {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+header i {
+    font-size: 12px;
+    margin: 0 5px;
+}
+.main-area .container {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 30px
+}
+@media (max-width: 992px) {
+    .main-area .container {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 30px
+    }
+}
+.main-area .container .page {
+    display: grid;
+    grid-template-rows: 200px auto;
+    gap: 30px;
+}
+.main-area .container .page .background {
+    background-image: url('../images/video-game-handset.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-area .container .page .background h1 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+@media (max-width: 500px) {
+    .main-area .container .page .background h1 {
+        font-size: 30px;
+    }
+}
+.main-area .container aside {
+    display: grid;
+    gap: 30px;
+}
+.main-area .container aside .box {
+    border: solid 3px #dedede;
+    padding: 30px;
+}
+.main-area .container aside .box2 {
+    margin-bottom: 100px;
+}
+.main-area .container aside .box h2 {
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    width: fit-content;
+    position: relative;
+}
+.main-area .container aside .box h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    height: 2px;
+    width: 60%;
+    background-color: orangered;
+}
+.main-area .container aside .box2 h2::after {
+    width: 70%;
+}
+.main-area .container aside .box p {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.main-area .container aside .box span {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 600;
+}
+.main-area .container aside .box .list .caption:first-of-type p:first-of-type {
+    display: flex;
+    justify-content: space-between;
+}
+.main-area .container aside .box .list .caption:not(:first-of-type) {
+    display: flex;
+    justify-content: space-between;
+}
+.main-area .container aside .box i {
+    font-size: 10px;
+    color: #777;
+}
+.main-area .container aside .box1 .list .caption .inner-list > p {
+    margin-left: 10px;
+}
+.main-area .container aside .box2 > div {
+    display: flex;
+    align-items: center;
+}
+.main-area .container aside .box2 > div div {
+    width: 10px;
+    height: 10px;
+    margin: 0 10px 10px 0;
+    box-shadow: 1px 1px 5px 0 #444444;
+}
+.main-area .container aside .box2 .gray div {
+    background-color: gray;
+}
+.main-area .container aside .box2 .white div {
+    background-color: white;
+}
+.main-area .container aside .box2 .black div {
+    background-color: black;
+}
+.main-area .container aside .box2 .camel div {
+    background-color: rgb(168, 129, 0);
+}
+.main-area .container aside .box2 .orange div {
+    background-color: orange;
+}
+.main-area .container .page .classification {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    height: fit-content;
+    font-size: 14px;
+    background-color: #f1f1f1f1;
+    padding: 10px;
+    color: #777;
+}
+@media (max-width: 600px) {
+    .main-area .container .page .classification {
+        flex-direction: column;
+    }
+}
+.main-area .container .page .classification .left {
+    display: flex;
+    align-items: center;
+}
+.main-area .container .page .classification .left p {
+    font-size: 12px;
+}
+.main-area .container .page .classification .left div {
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-area .container .page .classification .left div:first-child {
+    color: white;
+    background-color: #696969;
+}
+.main-area .container .page .classification .left div:last-of-type {
+    color: white;
+    background-color: black;
+    margin-right: 10px;
+}
+@media (max-width: 600px) {
+    .main-area .container .page .classification .left {
+        align-self: flex-start;
+    }
+}
+.main-area .container .page .classification .right {
+    display: flex;
+}
+.main-area .container .page .classification .right {
+    font-size: 12px;
+}
+.main-area .container .page .classification .right .list1 select {
+    width: 40px;
+    border: none;
+    outline: none;
+    margin-right: 20px;
+}
+.main-area .container .page .classification .right .list2 select {
+    width: 100px;
+    border: none;
+    outline: none;
+}
+@media (max-width: 600px) {
+    .main-area .container .page .classification .right {
+        margin-top: 10px;
+        align-self: flex-end;
+    }
+}
+.main-area .container .page .product-page {
+    display: flex;
+}
+@media (max-width: 1199px) {
+    .main-area .container .page .product-page {
+        flex-direction: column;
+    }
+}
+.main-area .container .page .product-page .product {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+.main-area .container .page .product-page .product::after {
+    content: '-12%';
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    color: white;
+    background-color: rgb(201, 54, 0);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+@media (max-width: 1199px) {
+    .main-area .container .page .product-page .product {
+        margin: auto;
+    }
+    .main-area .container .page .product-page .product::after {
+        top: 0px;
+        right: 10px;
+    }
+}
+.main-area .container .page .product-page .text .stars {
+    margin-bottom: 15px;
+}
+.main-area .container .page .product-page .text .stars i {
+    font-size: 12px;
+    color: rgb(255, 187, 0);
+}
+.main-area .container .page .product-page .text .title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.main-area .container .page .product-page .text .status {
+    color: #777;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.main-area .container .page .product-page .text .price {
+    margin-bottom: 15px;
+}
+.main-area .container .page .product-page .text .price .before {
+    color: #777;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+}
+.main-area .container .page .product-page .text .price .before::after {
+    content: '';
+    position: absolute;
+    bottom: 40%;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #777;
+}
+.main-area .container .page .product-page .text .price .after {
+    color: orangered;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.main-area .container .page .product-page .text .info {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.main-area .container .page .product-page .text .icons {
+    display: flex;
+    width: fit-content;
+    box-shadow: 0 0 10px #eee;
+}
+.main-area .container .page .product-page .text .icons div {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: solid 1px #dfdfdf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-area .container .page .product-page .text .icons div i {
+    color: #777;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    padding: 30px;
+    background-color: #2c2c2c;
+    color: white;
+    width: 100%
+}
