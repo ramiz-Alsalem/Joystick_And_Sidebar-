@@ -222,11 +222,13 @@ header i {
     border: none;
     outline: none;
     margin-right: 20px;
+    background-color: white;
 }
 .main-area .container .page .classification .right .list2 select {
     width: 100px;
     border: none;
     outline: none;
+    background-color: white
 }
 @media (max-width: 600px) {
     .main-area .container .page .classification .right {
